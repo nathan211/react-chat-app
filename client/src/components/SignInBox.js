@@ -27,12 +27,16 @@ const Google = props => (
     <a href="#" id="googleIcon"></a>
 );
 
+const submitHandler = () => {
+    console.log('submited');
+}
+
 
 export default function SignInBox() {
     return (
         <div id="loginform">
             <FormHeader title="Login" />
-            <Form />
+            <Form onSubmit={submitHandler} />
             <OtherMethods />
         </div>
     )
